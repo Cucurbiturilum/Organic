@@ -32,9 +32,11 @@ header {
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     color: $primary-color;
   }
-  .dropdown-menu{
+
+  .dropdown-menu {
     border: none;
   }
+
   .dropdown-menu.show {
     background-color: transparent;
 
@@ -61,6 +63,96 @@ header {
   }
 }
 
+.home {
+  blockquote {
+    font: 1.25rem $main-font;
+    color: $title-color;
+    font-style: italic;
+    font-weight: 300;
+  }
 
+  blockquote:before {
+    content: "ʻʻ";
+    font-size: 3rem;
+    display: block;
+  }
 
+  blockquote:after {
+    content: "ʼʼ";
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+  }
+
+  .carousel {
+    padding-bottom: 4.35rem;
+    border-bottom: 1px solid #dedede;
+    @media screen and (min-width: 1024px) {
+      border-bottom: none;
+      border-right: 1px solid #dedede;
+    }
+  }
+
+  .carousel-control-prev {
+    right: 6rem;
+  }
+
+  .carousel-control-next {
+    right: 4rem;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fe992a;
+    left: auto;
+    top: auto;
+    margin-bottom: 2rem;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  h2 {
+    font: 1.5rem $main-font;
+    color: $title-color;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font: 0.875rem $main-font;
+    line-height: 2;
+  }
+
+}
+
+footer {
+  background-color: #e87875;
+  font: 0.75rem $main-font;
+  color: $primary-color;
+  padding-top: 3rem;
+
+  a {
+    font: 0.6rem $main-font;
+    color: $primary-color;
+    line-height: 1.5rem;
+  }
+
+  a:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li:first-child {
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}
 

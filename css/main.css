@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-image: url(../images/header.png);
   -webkit-background-size: cover;
@@ -48,6 +49,83 @@ header p {
   color: white;
   font: 0.875rem "Lato", sans-serif;
   line-height: 2;
+}
+
+.home blockquote {
+  font: 1.25rem "Lato", sans-serif;
+  color: #feb676;
+  font-style: italic;
+  font-weight: 300;
+}
+.home blockquote:before {
+  content: "ʻʻ";
+  font-size: 3rem;
+  display: block;
+}
+.home blockquote:after {
+  content: "ʼʼ";
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+}
+.home .carousel {
+  padding-bottom: 4.35rem;
+  border-bottom: 1px solid #dedede;
+}
+@media screen and (min-width: 1024px) {
+  .home .carousel {
+    border-bottom: none;
+    border-right: 1px solid #dedede;
+  }
+}
+.home .carousel-control-prev {
+  right: 6rem;
+}
+.home .carousel-control-next {
+  right: 4rem;
+}
+.home .carousel-control-next, .home .carousel-control-prev {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fe992a;
+  left: auto;
+  top: auto;
+  margin-bottom: 2rem;
+}
+.home .carousel-control-next-icon, .home .carousel-control-prev-icon {
+  width: 10px;
+  height: 10px;
+}
+.home h2 {
+  font: 1.5rem "Lato", sans-serif;
+  color: #feb676;
+  margin-bottom: 2rem;
+}
+.home p {
+  font: 0.875rem "Lato", sans-serif;
+  line-height: 2;
+}
+
+footer {
+  background-color: #e87875;
+  font: 0.75rem "Lato", sans-serif;
+  color: white;
+  padding-top: 3rem;
+}
+footer a {
+  font: 0.6rem "Lato", sans-serif;
+  color: white;
+  line-height: 1.5rem;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li:first-child a {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
