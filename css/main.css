@@ -21,6 +21,12 @@ header .navbar-light .navbar-nav .nav-link {
   font: 0.9rem "Lato", sans-serif;
   margin: 0 2rem;
 }
+@media screen and (max-width: 768px) {
+  header .navbar-light .navbar-nav .nav-link {
+    font-size: 1.3rem;
+    text-align: right;
+  }
+}
 header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
   color: white;
 }
@@ -29,6 +35,8 @@ header .navbar-light .navbar-nav .active > .nav-link, header .navbar-light .navb
 }
 header .dropdown-menu {
   border: none;
+  text-align: right;
+  font-size: 1.2rem;
 }
 header .dropdown-menu.show {
   background-color: transparent;
@@ -116,6 +124,11 @@ footer a {
   font: 0.6rem "Lato", sans-serif;
   color: white;
   line-height: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  footer a {
+    font-size: 0.9rem;
+  }
 }
 footer a:hover {
   color: white;
