@@ -13,9 +13,16 @@ header {
 
   .navbar-brand {
     margin-right: 7rem;
-    margin-left: 2rem;
+    img{
+      width: 50%;
+      height: 50%;
+    }
     @media screen and (min-width: 1440px) {
       margin-right: 12rem;
+      img{
+        width: auto;
+        height: auto;
+      }
     }
   }
 

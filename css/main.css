@@ -9,11 +9,18 @@ header .navbar {
 }
 header .navbar-brand {
   margin-right: 7rem;
-  margin-left: 2rem;
+}
+header .navbar-brand img {
+  width: 50%;
+  height: 50%;
 }
 @media screen and (min-width: 1440px) {
   header .navbar-brand {
     margin-right: 12rem;
+  }
+  header .navbar-brand img {
+    width: auto;
+    height: auto;
   }
 }
 header .navbar-light .navbar-nav .nav-link {
